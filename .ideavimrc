@@ -1,0 +1,38 @@
+set scrolloff=7
+set relativenumber
+set number
+set ideajoin
+set clipboard+=unnamed
+set clipboard+=ideaput
+
+let mapleader = " "
+
+nnoremap <leader>h :action ToggleDistractionFreeMode<CR>
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+
+nnoremap <c-\> :action SplitVertically<CR>
+nnoremap <c--> :action SplitHorizontally<CR>
+nnoremap <c-=> :action Unsplit<CR>
+nnoremap <c-m> :action MoveEditorToOppositeTabGroup<CR>
+
+nnoremap <TAB> :action NextTab<CR>
+nnoremap <s-TAB> :action PreviousTab<CR>
+
+nnoremap <leader>q :action CloseContent<CR>
+nnoremap <leader>aq :action CloseAllEditors<CR>
+
+nnoremap <leader>o :action ExpandRegion<CR>
+nnoremap <leader>c :action CollapseRegion<CR>
+nnoremap <leader>ao :action ExpandAllRegions<CR>
+nnoremap <leader>ac :action CollapseAllRegions<CR>
+
+nnoremap ge :action GotoNextError<CR>
+nnoremap gE :action GotoPreviousError<CR>
+
+nnoremap <leader>r :action RecentFiles<CR>
+
+nnoremap <s-r> :action ContextRun<CR>
+nnoremap <s-q> :action ContextDebug<CR>
+nnoremap <s-u> :action ToggleLineBreakpoint<CR>
+nnoremap <leader><s-r> :action RerunTests<CR>
+nnoremap <leader><s-q> :action RerunFailedTests<CR>
